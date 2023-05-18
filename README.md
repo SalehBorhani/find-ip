@@ -1,7 +1,7 @@
 # find-ip
 If you have implemented v2ray protocol for VPN with cloudflare CDN you need clean ips. This project uses [cfscanner](https://github.com/MortezaBashsiz/CFScanner/tree/main/python) to scan clean ips according to your ISP and when it scans the ips it will find the best ip (according to download speed) and place it behind your subdomain that has registered in cloudflare automatically.
 
-# How to run ?
+# How to run ? (In Linux)
 1. You need domain.
 2. Register your domain at [cloudflare](https://www.cloudflare.com/).
 3. Define a subdomain with `A` type record.
