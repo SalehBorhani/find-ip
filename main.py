@@ -47,3 +47,4 @@ record_id = records[0]['id']
 
 new_record = {'name': 'subdomain', 'type': 'A', 'content': best_ips[0][0], 'proxied': False}
 cf.zones.dns_records.put(zone_id, record_id, data=new_record)
+print("DONE! IP has replaced.")
