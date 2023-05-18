@@ -7,7 +7,7 @@ If you have implemented v2ray protocol for VPN with cloudflare CDN you need clea
 3. Define a subdomain with `A` type record.
 4. Get the API token.
 
-After do the above steps, replace the `email`, `token`, `domain` and `subdomain` with yours and do the followings.:
+After do the above steps, replace the `email`, `token`, `domain` and `subdomain` with yours in `main.py` and do the followings.:
 ```
 $ git clone https://github.com/SalehBorhani/find-ip.git && cd find-ip
 $ pip install -r requirements.txt
