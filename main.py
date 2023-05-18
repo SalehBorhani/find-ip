@@ -3,7 +3,7 @@ import subprocess
 import os
 import datetime
 import csv
-
+import sys
 
 ips = {}
 
@@ -35,6 +35,12 @@ if newest_file is not None:
             ips[row[0]] = [row[1], row[2]]
 
 best_ips = sorted(ips.items(), key=lambda x: x[1][0], reverse=True)
+
+try:
+    print("Best IP is: " + best_ips[0][0])
+except IndexError:
+    print("Sorry, Didn't find clean ip =(")
+    sys.exit(1)    
 
 
 cf = CloudFlare.CloudFlare(email='email@email.com', token='<token>')
